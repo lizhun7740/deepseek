@@ -3,18 +3,18 @@
   "version": "0.0.17",
   "description": "DeepSeek Free API Server",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "public/index.js",
+  "module": "public/index.mjs",
+  "types": "public/index.d.ts",
   "directories": {
-    "dist": "dist"
+    "public": "public"
   },
   "files": [
-    "dist/"
+    "public/"
   ],
   "scripts": {
-    "dev": "tsup src/index.ts --format cjs,esm --sourcemap --dts --publicDir public --watch --onSuccess \"node --enable-source-maps --no-node-snapshot dist/index.js\"",
-    "start": "node --enable-source-maps --no-node-snapshot dist/index.js",
+    "dev": "tsup src/index.ts --format cjs,esm --sourcemap --dts --publicDir public --watch --onSuccess \"node --enable-source-maps --no-node-snapshot public/index.js\"",
+    "start": "node --enable-source-maps --no-node-snapshot public/index.js",
     "build": "tsup src/index.ts --format cjs,esm --sourcemap --dts --clean --publicDir public"
   },
   "author": "Vinlic",
