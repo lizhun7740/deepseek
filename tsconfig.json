@@ -9,8 +9,8 @@
       "paths": {
         "@/*": ["src/*"]
       },
-      "outDir": "./public"
+      "outDir": "./dist"
     },
     "include": ["src/**/*", "libs.d.ts"],
-    "exclude": ["node_modules", "public"]
+    "exclude": ["node_modules", "dist"]
 }
